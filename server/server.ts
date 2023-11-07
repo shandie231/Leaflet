@@ -10,7 +10,7 @@ app.use(express.static(path.resolve(__dirname, '../build')));
 app.get('*', (req: Request, res: Response) => {
   res.sendFile(path.resolve(__dirname, '../build', 'index.html'))
 });
-
+//
 app.listen(PORT, () => {
   console.log(`listening on http://localhost:${PORT}`)
 })
