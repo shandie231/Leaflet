@@ -3,7 +3,6 @@
     "outDir": "./dist",
     "target": "es6",
     "module": "commonJS",
-    "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
