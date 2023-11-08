@@ -1,7 +1,12 @@
 h1, p {
   font-family: Lato;
 }
-.maps {
-  display: flex;
-  flex-wrap: wrap;
+
+#coordinatesOverlay {
+  z-index: 400;
+}
+
+.coordinates {
+  height: 20vh;
+  width: 20%;
 }
