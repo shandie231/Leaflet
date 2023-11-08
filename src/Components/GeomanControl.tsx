@@ -2,12 +2,9 @@ import { createControlComponent } from '@react-leaflet/core';
 import * as L from 'leaflet';
 import '@geoman-io/leaflet-geoman-free';
 import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
+import { Props } from './types'
 
-interface Props extends L.ControlOptions {
-  position: L.ControlPosition;
-  drawCircle?: boolean;
-  oneBlock?: boolean;
-}
+
 
 const Geoman = L.Control.extend({
   initialize(options: Props) {
@@ -22,6 +19,7 @@ const Geoman = L.Control.extend({
     });
   },
 });
+
 
 const createGeomanInstance = (props: Props) => {
   return new Geoman(props);
