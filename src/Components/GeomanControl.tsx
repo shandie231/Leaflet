@@ -13,10 +13,12 @@ const Geoman = L.Control.extend({
 
   addTo(map: L.Map) {
     if (!map.pm) return;
-
+    console.log('map:', map);
+    
     map.pm.addControls({
       ...this.options,
     });
+    
   },
 });
 

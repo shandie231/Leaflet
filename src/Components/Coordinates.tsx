@@ -25,12 +25,16 @@ type Props = {
       <h1>
         Display Coordinates
       </h1>
-      <form onSubmit={(e) => {changeLat(e)}}>
-        <input className="lat" type="string" placeholder="Latitude" onChange={(e) => setLat(Number(e.target.value))}></input>
-        <input className="long" type="string" placeholder="Longitude" onChange={(e) => setLong(Number(e.target.value))}></input>
-        <br></br>
-        <button className='submitLatLongBtn'>Submit</button>
-      </form>
+      <div id='coordinateBoxes'>
+        <form onSubmit={(e) => {changeLat(e)}}>
+          <input className="lat" type="string" placeholder="Latitude" onChange={(e) => setLat(Number(e.target.value))}></input>
+          <input className="long" type="string" placeholder="Longitude" onChange={(e) => setLong(Number(e.target.value))}></input>
+          <br></br>
+          <button className='submitLatLongBtn'>Submit</button>
+        </form>
+      </div>
+      <div id='currCoordinates'>
+      </div>
     </div>
   )
 }

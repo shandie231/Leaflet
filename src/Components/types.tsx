@@ -10,3 +10,9 @@ export interface Props extends L.ControlOptions {
   drawCircle?: boolean;
   oneBlock?: boolean;
 }
+
+export interface textProps extends L.ControlOptions {
+  position: L.ControlPosition;
+  lat: number;
+  long: number;
+}
