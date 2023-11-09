@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    image: leafletdemo/mm-dev
+    container_name: mm-dev-hot
+    ports: 
+      - 8080:8080
+    volumes: 
+      - ./:/usr/src/app #path-based volume
+      - node_modules:/usr/src/app/node_modules # named volume
+    command: npm run dev:hot
+volumes: 
+  node_modules: 
+
