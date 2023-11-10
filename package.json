@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "bundle": "webpack --config ./webpack.config.js",
+    "bundle": "npx tsc",
+    "build": "webpack --config ./webpack.config.js",
     "starts": "node dist/server/server.js",
     "dev": "nodemon -q server/server.ts",
     "webpack": "webpack-dev-server --open --hot",
