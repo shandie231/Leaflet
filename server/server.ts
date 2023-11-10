@@ -3,7 +3,7 @@ import path from 'path';
 
 
 const app: Express = express();
-const PORT: number = 3000;
+const PORT = 3000 || process.env.PORT;
 
 app.use(express.static(path.resolve(__dirname, '../build')));
 
