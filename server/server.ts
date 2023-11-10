@@ -12,7 +12,7 @@ app.get('/favicon.ico', (req: Request, res: Response) => {
 })
 app.get('*', (req: Request, res: Response) => {
   res.sendFile(path.resolve(__dirname, '../build', 'index.html'))
-});
+});//
 
 //
 app.listen(PORT, () => {
