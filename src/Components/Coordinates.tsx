@@ -19,6 +19,7 @@ type Props = {
     updateLatLong(lati, longi);
 
   }
+  //
 
   return (
     <div className='coordiantes'>
