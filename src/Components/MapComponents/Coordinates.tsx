@@ -11,12 +11,13 @@ type Props = {
   const { updateLatLong} = props;
   let easyLat: number;
   let easyLong: number;
-  const [lati, setLat] = useState <number> ()  ;
+  const [lati, setLat] = useState <number> ();
   const [longi, setLong] = useState<number>();
+  const [locaName, setLocaName] = useState<string>();
 
   const changeLat = async (e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
-    updateLatLong(lati, longi);
+    updateLatLong(lati, longi, locaName);
 
   }
   //
@@ -30,6 +31,7 @@ type Props = {
         <form onSubmit={(e) => {changeLat(e)}}>
           <input className="lat" type="string" placeholder="Latitude" onChange={(e) => setLat(Number(e.target.value))}></input>
           <input className="long" type="string" placeholder="Longitude" onChange={(e) => setLong(Number(e.target.value))}></input>
+          <input className='locaName' type='string' placeholder='Location' onChange={(e) => setLocaName((e.target.value))}></input>
           <br></br>
           <button className='submitLatLongBtn'>Submit</button>
         </form>

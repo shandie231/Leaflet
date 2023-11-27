@@ -3,7 +3,7 @@ import { ControlledLayer } from '@react-leaflet/core/lib/context';
 import L, { LatLngTuple, Map, Rectangle } from 'leaflet';
 import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
-import { squareProps } from './types'
+import { squareProps } from '../types'
 
 function getBounds(center: LatLngTuple, size: number) {
   return L.latLng(center).toBounds(size);
