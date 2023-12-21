@@ -1,3 +1,6 @@
+body {
+ background-color: steelblue; 
+}
 h1, p {
   font-family: Lato;
 }
@@ -24,4 +27,65 @@ z-index: 100;
 
 .maps {
   position: relative;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 5px;
+  background-color: steelblue;
+  padding: 10px;
+}
+
+button {
+  background-color: rgb(255, 166, 0);
+}
+
+@keyframes pulse{
+  0% {
+    transform:scale(3);
+    color: rgb(203, 149, 22);
+  }
+  50% {
+    transform:scale(2.5);
+    color: rgb(0, 208, 215);
+  }
+  100% {
+    transform:scale(3);
+    color: rgb(203, 149, 22);
+  }
+}
+
+.Michael span, .Shand span{
+  display: inline-block;
+  animation: pulse 2s infinite;
+  letter-spacing: 5vh;
+}
+
+.animatedName {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  margin: 0;
+}
+
+.Michael, .Shand {
+  margin-left: 25vh;
+  font-size: 200%;
+}
+.Shand {
+  margin-top: 5vh;
+}
+
+.HomepageContent {
+display: flex;
+justify-content: space-between;
+}
+
+.headshot {
+  
+  margin-right: 25vh;
+  transform: scale(1.5);
 }

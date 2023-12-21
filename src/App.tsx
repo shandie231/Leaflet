@@ -9,13 +9,15 @@ import Coordinates from './Components/MapComponents/Coordinates'
 import { TextboxOverlay } from './Components/MapComponents/TextboxOverlay';
 import MainMap from './Components/Main Pages/MainMap';
 import NewJob from './Components/Main Pages/JobInfo';
+import Homepage from './Components/Homepage';
 
 const App = () => {
 
   return(
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<MainMap />}/>
+        <Route path='/' element={<Homepage />}/>
+        <Route path='/map' element={<MainMap />}/>
         <Route path='/job' element={<NewJob />}/>
       </Routes>
     </BrowserRouter>
